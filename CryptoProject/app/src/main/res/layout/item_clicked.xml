@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="@drawable/rounded_corner_border"
+
+    >
+    <ImageView
+        android:id="@+id/iconCoins"
+        android:layout_width="@dimen/Icon"
+        android:layout_height="@dimen/Icon"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        />
+    <TextView
+        android:id="@+id/symbol"
+        android:layout_toRightOf="@id/iconCoins"
+        style="@style/cointTxtBold"
+        android:paddingLeft="@dimen/small"
+        android:text="BTC"
+        />
+    <TextView
+        android:id="@+id/name"
+        android:layout_toRightOf="@id/iconCoins"
+        android:layout_below="@id/symbol"
+        style="@style/cointTxtSmall"
+        android:paddingLeft="@dimen/small"
+        android:text="Bitcoin"
+        />
+    <TextView
+        android:id="@+id/priceUSD"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        style="@style/cointTxtBold"
+        android:text="$619.57"
+        />
+    <TextView
+        android:id="@+id/priceUSDTxt"
+        android:layout_below="@id/priceUSD"
+        android:layout_alignParentRight="true"
+        style="@style/cointTxtSmall"
+        android:text="Price USD"
+        />
+    <TextView
+        android:id="@+id/priceBTC"
+        android:layout_below="@id/iconCoins"
+        style="@style/cointTxtBold"
+        android:text="34427,12"/>
+    <TextView
+        android:id="@+id/priceBTCTxt"
+        android:layout_below="@id/priceBTC"
+        style="@style/cointTxtSmall"
+        android:text="Price BTC"/>
+    <TextView
+        android:id="@+id/rank"
+        android:layout_below="@id/iconCoins"
+        android:layout_alignBaseline="@id/priceBTC"
+        android:layout_centerHorizontal="true"
+        style="@style/cointTxtBold"
+        android:text="34"/>
+    <TextView
+        android:id="@+id/rankTxt"
+        android:layout_below="@id/iconCoins"
+        android:layout_alignBaseline="@id/priceBTCTxt"
+        android:layout_centerHorizontal="true"
+        style="@style/cointTxtSmall"
+        android:text="Rank"/>
+    <TextView
+        android:id="@+id/volume"
+        android:layout_below="@id/iconCoins"
+        android:layout_alignBaseline="@id/priceBTC"
+        android:layout_alignParentRight="true"
+        style="@style/cointTxtBold"
+        android:textColor="#3cae65"
+        android:text="+25%"/>
+    <TextView
+        android:id="@+id/volumeTxt"
+        android:layout_below="@id/iconCoins"
+        android:layout_alignBaseline="@id/priceBTCTxt"
+        android:layout_alignParentRight="true"
+        style="@style/cointTxtSmall"
+        android:text="Volume (24H)"/>
+
+    <TextView
+
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Checket"/>
+</RelativeLayout>
+
+
+
